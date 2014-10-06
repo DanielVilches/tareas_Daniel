@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Funciones</title>
+
+	<script type="text/javascript" charset="UTF-8">
+		
+		function escribe(){
+			document.getElementById("pais").value="Hola";
+			document.getElementById("pais").focus();
+		};
+		
+			function borrar(){
+			document.getElementById("pais").value="";
+		}
+
+		function escribirpais(){
+		document.getElementById("textopais").innerHTML = document.getElementById("pais").value;
+
+		}
+		
+	
+		
+	</script>
+
+		<style type="text/css" media="screen">
+			#textopais{
+				font-size: 100px;
+				text-align: center;
+			}
+		</style>
+
+</head>
+
+<body>
+	
+	<input type="text" name="pais" id="pais">
+    <input type="button" name="boton" value="Escribe texto" id="boton"
+    onClick="escribe();">
+    
+	<input id="botonpais" type="button" value="escrbir pais" 
+    onclick="escribirpais();">
+    
+    <input type="button" name="borrar" value="limpiar" id="borrar"
+    onClick="borrar();">
+    
+
+		<div id="textopais"></div>
+
+
+	<script type="text/javascript" charset="UTF-8">
+		
+		
+	</script>
+	
+</body>
+</html> 
